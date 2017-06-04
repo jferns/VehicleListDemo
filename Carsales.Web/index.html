@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="tsCarsalesApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Carsales</title>
+    <link href="content/css/bootstrap.css" rel="stylesheet" />
+    <link href="content/css/site.css" rel="stylesheet" />
+    <script type="text/javascript" src="content/js/jquery.js"></script>
+    <script type="text/javascript" src="content/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <script src="content/js/angular.js"></script>
+    <script src="content/js/angular-aria.js"></script>
+    <script src="content/js/angular-route.js"></script>
+    <script src="content/js/angular-sanitize.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/models/carsales.models.js"></script>
+    <script src="app/controllers/carsalesListController.js"></script>
+    <script src="app/services/carsalesDataService.js"></script>
+    <script src="app/directives/vehicleModify.js"></script>
+</body>
+</html>

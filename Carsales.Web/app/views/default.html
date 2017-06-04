@@ -1,0 +1,19 @@
+﻿<div>
+    <div class="page-header">Select a Vehicle to Edit</div>
+    <div class="row">
+        <div ng-controller="carsListController as vm">
+            <ul class="list-group">
+                <li ng-show="vm.list.length > 0" class="list-group-item row" ng-repeat="v in vm.list">
+                    <span class="col-md-1 col-sm-1"><img src="/content/images/{{v.image}}-md.png" alt="{{v.name}}" /></span>
+                    <span class="col-md-6 col-sm-11">{{ v.name}}</span>
+                    <span class="col-md-2 col-sm-7">{{ v.engine }} - {{ v.wheels }}:Wheels</span>
+                    <span class="col-md-1 col-sm-2" ng-show="v.doors > 0">{{ v.doors }}:Doors</span>
+                    <span class="col-md-1 col-sm-2" ng-show="(v.doors <= 0)">&nbsp;</span>
+                    <div class="col-push-10"><a href="/edit/{{v.vehicleClassType}}/{{v.id}}" class="btn btn-block">Edit</a></div>
+                </li>
+            </ul>
+            <div class="col-push-8"><a href="/add/Car" class="btn btn-block">Add Car</a></div>
+            <div class="col-push-9"><a href="/add/Bike" class="btn btn-block">Add Bike</a></div>
+        </div>
+    </div>
+</div>

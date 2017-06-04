@@ -1,0 +1,33 @@
+{
+  "name": "carsales-web",
+  "description": "Carsales Web",
+  "main": "index.js",
+  "authors": [
+    "JGF"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.10",
+    "angular-animate": "1.5.10",
+    "angular-aria": "1.5.10",
+    "angular-bootstrap": "^1.0.0",
+    "angular-mocks": "1.4.10",
+    "angular-resource": "1.4.10",
+    "angular-route": "1.5.10",
+    "angular-sanitize": "1.4.10",
+    "angular-ui": "^0.4.0",
+    "bootstrap": "3.3.7",
+    "jquery": "2.0.3"
+  },
+  "resolutions": {
+    "angular": ">=1.5.0"
+  }
+}

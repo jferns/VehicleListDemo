@@ -1,0 +1,30 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "boss": true,
+  "eqnull": true,
+  "node": true,
+  "browser": true,
+
+  //global variables
+  "globals": {
+    "angular": false,
+    "jasmine": false,
+    "$": false,
+    "_": false,
+    "module": false,
+    "require": false,
+    "window": false,
+    "document": false,
+    "define": false,
+    "alert": false,
+    "moment": false
+  }
+}
