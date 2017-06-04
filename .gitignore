@@ -261,5 +261,5 @@ __pycache__/
 *.pyc
 
 **/bower_components
-app/**/*.js
-app/**/*.map
+**/app/**/*.js
+**/app/**/*.map
