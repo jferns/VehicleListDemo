@@ -40,11 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Models\Bike.cs" />
+    <Compile Include="Models\BikeType.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\CarType.cs" />
+    <Compile Include="Models\ModelDoors.cs" />
+    <Compile Include="Models\ModelEngine.cs" />
+    <Compile Include="Models\ModelVehicleType.cs" />
+    <Compile Include="Models\ModelWheels.cs" />
+    <Compile Include="Models\Vehicle.cs" />
+    <Compile Include="Models\VehicleClass.cs" />
+    <Compile Include="Models\VehicleEngine.cs" />
+    <Compile Include="Models\VehicleMake.cs" />
+    <Compile Include="Models\VehicleModel.cs" />
+    <Compile Include="Models\VehicleType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

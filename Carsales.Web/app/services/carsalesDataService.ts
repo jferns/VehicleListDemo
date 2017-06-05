@@ -15,6 +15,18 @@
             this.$log.debug("GetAllVehicles");
 
             let deferred = this.$q.defer();
+
+            this.$http.get("api/vehicles")
+                .then((t: { data: Array<models.Vehicle> }) => deferred.resolve(t.data))
+                .catch((e) => deferred.reject(e));
+            return deferred.promise;
+        }
+
+        getAllVehicleDataOld = (): ng.IPromise<any> => {
+
+            this.$log.debug("GetAllVehicles");
+
+            let deferred = this.$q.defer();
             this.$timeout(() => {
                 this.list = [];
                 this.list.push(new models.Vehicle(0, models.VehicleClass.Car, models.CarType.sedan, "Holden", "Commodore", "V6 Petrol", 4, 4));
@@ -27,7 +39,7 @@
                 this.list.push(new models.Vehicle(6, models.VehicleClass.Bike, models.BikeType.road, "BMW", "BK3", "1200cc Petrol", 2, 0));
                 this.list.push(new models.Vehicle(7, models.VehicleClass.Bike, models.BikeType.offRoad, "BMW", "OR3", "Diesel", 3, 0));
                 this.list.push(new models.Vehicle(8, models.VehicleClass.Bike, models.BikeType.offRoad, "BMW", "OR3", "Petrol", 3, 0));
-                
+
                 deferred.resolve(this.list);
             }, 1000);
             return deferred.promise;

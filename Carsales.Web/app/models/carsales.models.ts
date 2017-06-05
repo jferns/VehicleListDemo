@@ -1,8 +1,8 @@
 ﻿module carsales.models {
 
     export enum VehicleClass {
-        Car,
-        Bike
+        Car = 1,
+        Bike = 2
     }
 
     export enum CarType {
